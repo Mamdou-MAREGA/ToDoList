@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>To Do list</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-database.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/list.js"></script>
+    <script src="js/createUser.js"></script>
+</head>
+<body>
+    <header>
+      <nav class="light-red lighten-1" role="navigation">
+        <div class="nav-wrapper container">
+          <a id="logo-container" href="index.html" class="brand-logo">Code</a>
+          <!-- <a href="index.html"><img src="assets/img/icon.png" /></a> -->
+          <ul class="right hide-on-med-and-down">
+            <li class="listBtn"><a href="list.html">Liste</a></li>
+            <li class="scnrBtn"><a href="scanner.html">Scanner</a></li>        
+            <li class="signUpBtn"><a href="signUp.html">Inscription</a>
+            <li class="signInBtn"><a href="signIn.html">Connexion</a></li>
+            <li class="signOutBtn"><a href="index.html">Déconnexion</a></li>
+          </ul>
+          <ul id="nav-mobile" class="sidenav">
+            <li class="listBtn"><a href="list.html">Liste</a></li>
+            <li class="scnrBtn"><a href="scanner.html">Scanner</a></li>
+            <li class="signUpBtn"><a href="signUp.html">Inscription</a>
+            <li class="signInBtn"><a href="signIn.html">Connexion</a></li>
+            <li class="signOutBtn"><a href="index.html">Déconnexion</a></li>
+          </ul>
+          <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+      </nav>
+    </header>
+  
+    <main class="container">
+     <h1 class="title">Connexion</h1>
+        <div class="w-50 mx-auto" id="kiki">
+          <form>
+            <div class="form-group">
+              <input type="email" class="connect" id="signInEmail" name="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <input type="password" class="connect" id="signInPassword" name="password" placeholder="Entrez votre mot de passe">
+            </div>
+            <button class="btn" id="signInSubmit" type="button">
+              <a>Connexion</a>
+            </button>
+          </form>
+        </div>
+    </main>
+
+     <footer class="page-footer primary">
+      <div class="footer-copyright">
+        <div class="container">
+          Made by <a class="white-text text-light-3" href="http://mamadou.lecodeparfait.fr">Mamadou</a>
+        </div>
+      </div>
+    </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>

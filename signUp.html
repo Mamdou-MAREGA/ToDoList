@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>To Do list</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bccceca99e.js" crossorigin="anonymous"></script>
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-database.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/createUser.js"></script>
+<!--     <script src="js/list.js"></script>
+ -->
+</head>
+<body>
+    <header>
+      <nav class="light-red lighten-1" role="navigation">
+        <div class="nav-wrapper container">
+          <a id="logo-container" href="index.html" class="brand-logo">Code</a>
+          <!-- <a href="index.html"><img src="assets/img/icon.png" /></a> -->
+          <ul class="right hide-on-med-and-down">
+            <li class="listBtn"><a href="list.html">Liste</a></li>
+            <li class="scnrBtn"><a href="scanner.html">Scanner</a></li>        
+            <li class="signUpBtn"><a href="signUp.html">Inscription</a>
+            <li class="signInBtn"><a href="signIn.html">Connexion</a></li>
+            <li class="signOutBtn"><a href="index.html">Déconnexion</a></li>
+          </ul>
+          <ul id="nav-mobile" class="sidenav">
+            <li class="listBtn"><a href="list.html">Liste</a></li>
+            <li class="scnrBtn"><a href="scanner.html">Scanner</a></li>
+            <li class="signUpBtn"><a href="signUp.html">Inscription</a>
+            <li class="signInBtn"><a href="signIn.html">Connexion</a></li>
+            <li class="signOutBtn"><a href="index.html">Déconnexion</a></li>
+          </ul>
+          <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+      </nav>
+    </header>
+  
+    <main class="container">
+     <div class="container containerglobal">
+
+    <form class="formulaire" id="signUpForm">
+      <div class="containerparti">
+        <div class="container containercontent">
+          <h1 class="divimput">Inscription</h1>
+        </div>
+        <div class="container containercontent containeremailmdp">
+          <div class="divimput divemail divtaille4">
+            <input type="email" class="connect" placeholder="Email" id="signUpEmail">
+          </div>
+          <div class="divimput divmdp divtaille4">
+            <input type="password" class="connect" placeholder="Mot de passe (8 caractères minimum)" minlength="8" id="signUpPassword">
+          </div>
+        </div>
+      </div>
+
+      <div class="container containercontent containerbtnvalider">
+        <div class="divimput divbtnvalider divtaille2">
+          <!-- <input type="button" class="imputform" value="S'inscrire"> -->
+          <button class="btn" type="button" id="signUpSubmit">
+            S'inscrire 
+          </button>
+        </div>
+      </div>
+
+    </form>
+
+  </div>
+
+    </main>
+
+      <footer class="page-footer primary">
+      <div class="footer-copyright">
+        <div class="container">
+          Made by <a class="white-text text-light-3" href="http://mamadou.lecodeparfait.fr">Mamadou</a>
+        </div>
+      </div>
+    </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
